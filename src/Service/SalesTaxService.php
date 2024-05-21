@@ -7,10 +7,10 @@ use Src\Interface\Service\SalesTaxServiceInterface;
 
 class SalesTaxService implements SalesTaxServiceInterface
 {
-    public function calculate(float $amount, CustomerInterface $customer): int
+    public function calculate(float $amount, CustomerInterface $customer): float
     {
         sleep(1);
 
-        return rand(10, 100);
+        return $amount * 0.1;
     }
 }
